@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-  opacity: 0;
+  opacity: 1;  /* Changed from opacity: 0 to opacity: 1 */
   margin: 0;
   transition: opacity 2s;
 }
@@ -52,7 +52,6 @@ h2 {
   // Set a timer to change the text after 3 seconds
   setTimeout(function() {
     document.getElementById('responseText').textContent = 'Nie';
-    document.getElementById('responseText').style.opacity = 1;
   }, 3000);  // 3000 milliseconds = 3 seconds
 </script>
 

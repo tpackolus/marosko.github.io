@@ -18,51 +18,35 @@ body {
   margin: 0;
 }
 
-h1 {
+.container {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  margin: 0;
+}
+
+h1 {
+  margin: 0 0 20px 0; /* Adjust bottom margin to control spacing */
 }
 
 h2 {
-  text-align: center;
   opacity: 0;
-  transition: opacity 2s; /* Adjust duration of fade-in effect */
+  margin: 0;
+  transition: opacity 2s;
 }
 
 /* media queries for responsive design */
-
-/* for screens smaller than 768px */
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 30px;
-  }
-}
-
-/* for screens between 768px and 1023px */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  body {
-    font-size: 35px;
-  }
-}
-
-/* for screens larger than 1023px */
-@media only screen and (min-width: 1024px) {
-  body {
-    font-size: 40px;
-  }
-}
+/* ... (rest of your code) */
 
 </style>
 </head>
 <body>
 
-<h1>Má Maroško frajerku?</h1>
-
-<h2 id="responseText">Zisťujem...</h2>    
+<div class="container">
+  <h1>Má Maroško frajerku?</h1>
+  <h2 id="responseText">Zisťujem...</h2>
+</div>
 
 <script>
   // Set a timer to change the text after 3 seconds

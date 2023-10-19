@@ -27,6 +27,12 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s; /* Adjust duration of fade-in effect */
+}
+
 /* media queries for responsive design */
 
 /* for screens smaller than 768px */
@@ -54,11 +60,17 @@ h1 {
 </head>
 <body>
 
-
 <h1>Má Maroško frajerku?</h1>
-<br />
-<br />
-<h2>Nie</h2>    
-	
+
+<h2 id="responseText">Zisťujem...</h2>    
+
+<script>
+  // Set a timer to change the text after 3 seconds
+  setTimeout(function() {
+    document.getElementById('responseText').textContent = 'Nie';
+    document.getElementById('responseText').style.opacity = 1;
+  }, 3000);  // 3000 milliseconds = 3 seconds
+</script>
+
 </body>
 </html>
